@@ -1,0 +1,254 @@
+@import url(http://fonts.googleapis.com/css?family=Bilbo);
+
+body {
+    background-image: url("http://www.solidscape.es/img/atlanuss.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #F6F1FA;
+    
+}
+
+.section .reveal .state-background {
+    background-color: #EADEF3;
+    background-image: url("http://www.solidscape.es/img/atlanusss.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+h3 {
+    font-family: 'Bilbo' !important;
+}
+
+.reveal h1 {
+    font-weight: bold;
+    text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+}
+
+.reveal h3 {
+    font-size: 1.8em;
+}
+
+#rezultat {
+  text-align: center;
+  width: 80%;
+  color: #000;
+  background-color: #fdd960;
+  border-color: #fdd960;
+  padding: 20px;
+  margin: auto;
+  box-shadow:         4px 4px 10px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    4px 4px 10px 0px rgba(50, 50, 50, 0.75);
+  margin-top: 30px;
+  margin-bottom: 40px;
+  }
+  
+.reveal pre code {
+    font-size: 0.9em;
+}
+
+
+
+/* FLYING BUGS */
+
+/* keyframes definition for WebKit browsers */
+
+/* 2222222222 */
+
+@-webkit-keyframes travel2 {
+  from { }
+  to {
+    left: 100%;
+    margin-left: -50px;
+    -webkit-transform: rotateZ(360deg) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes bounce2 {
+  from { }
+  to {
+    bottom: 100%;
+    margin-bottom: -50px;
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+
+/* keyframes definition for other browsers */
+
+@keyframes travel2 {
+  from {
+    left: 0;
+    margin-left: 0;
+    -moz-transform: rotate(0) rotateY(0);
+    -ms-transform: rotate(0) rotateY(0);
+    transform: rotate(0) rotateY(0);
+  }
+  to {
+    left: 100%;
+    margin-left: -50px;
+    -moz-transform: rotateZ(360deg) rotateY(360deg);
+    -ms-transform: rotateZ(360deg) rotateY(360deg);
+    transform: rotateZ(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    bottom: 0;
+    margin-bottom: 0;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    bottom: 100%;
+    margin-bottom: -50px;
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/* 3333333333 */
+
+@-webkit-keyframes travel3 {
+  from { }
+  to {
+    right: 100%;
+    margin-left: -50px;
+    -webkit-transform: rotateZ(90deg) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes bounce3 {
+  from { }
+  to {
+    top: 100%;
+    margin-top: -50px;
+    -webkit-transform: rotateZ(90deg);
+  }
+}
+
+
+/* keyframes definition for other browsers */
+
+@keyframes travel3 {
+  from {
+    right: 0;
+    margin-left: 0;
+    -moz-transform: rotate(0) rotateY(0);
+    -ms-transform: rotate(0) rotateY(0);
+    transform: rotate(0) rotateY(0);
+  }
+  to {
+    right: 100%;
+    margin-left: -50px;
+    -moz-transform: rotateZ(360deg) rotateY(360deg);
+    -ms-transform: rotateZ(360deg) rotateY(360deg);
+    transform: rotateZ(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes bounce3 {
+  from {
+    top: 0;
+    margin-top: -50px;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    top: 100%;
+    margin-top: -50px;
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* styles for the stage and animated elements */
+
+#stage2 {
+  position: relative;
+  margin: -400px;
+  width: 1600px;
+  height: 1000px;
+}
+
+#traveler2 {
+  position: absolute;
+  width: 100px;
+  height: 900px;
+
+  -webkit-animation-name: travel2;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 6s;
+
+  animation-name: travel2;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 6s;
+}
+
+#bouncer2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-filter: hue-rotate(270deg);
+
+  -webkit-animation-name: bounce2;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 6s;
+
+  animation-name: bounce2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 6s;
+}
+
+#traveler3 {
+  position: absolute;
+  width: 200px;
+  height: 1200px;
+
+  -webkit-animation-name: travel3;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 4s;
+
+  animation-name: travel3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 4s;
+}
+
+#bouncer3 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+
+  -webkit-animation-name: bounce3;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 4s;
+
+  animation-name: bounce3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 4s;
+}
+
+.reveal section img {
+    border: none;
+    box-shadow: none;
+
+}
+
